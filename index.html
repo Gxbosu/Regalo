@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expediente Especial: Levi Ackerman</title>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <style>
+        :root {
+            --militar-green: #2d3e2d;
+            --dark-gray: #1a1a1a;
+            --accent: #a67c52;
+            --text-color: #e0e0e0;
+        }
+
+        body {
+            background-color: var(--dark-gray);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            border: 2px solid var(--militar-green);
+            padding: 20px;
+            background: linear-gradient(145deg, #1f1f1f, #252525);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-radius: 10px;
+            box-sizing: border-box; /* Asegura que el padding no rompa el ancho */
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .status-badge {
+            background-color: var(--militar-green);
+            color: white;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* ESTILO PARA EL GIF CENTRADO Y RESPONSIVO */
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .main-gif {
+            max-width: 100%; /* No se sale del contenedor */
+            height: auto;    /* Mantiene la proporción */
+            border-radius: 8px;
+            border: 1px solid var(--accent);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Estilo para el visor 3D (opcional) */
+        model-viewer {
+            width: 100%;
+            height: 300px;
+            margin: 20px 0;
+            background-color: #121212;
+            border-radius: 8px;
+        }
+
+        .section-title {
+            color: var(--accent);
+            font-weight: bold;
+            margin-top: 25px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #333;
+        }
+
+        .stat-name { font-weight: bold; color: #888; }
+        .stat-value { text-align: right; color: var(--accent); }
+
+        .quote-card {
+            font-style: italic;
+            background: rgba(166, 124, 82, 0.1);
+            padding: 15px;
+            border-left: 4px solid var(--accent);
+            margin: 15px 0;
+            font-size: 0.95rem;
+        }
+
+        .personal-note {
+            background-color: #2d3e2d;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            border: 1px dashed var(--accent);
+        }
+
+        iframe {
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="status-badge">ACCESO RESTRINGIDO: LEGIÓN DE RECONOCIMIENTO</div>
+        <h2>Expediente: Capitán Levi</h2>
+        
+        <p style="text-align: center; font-size: 0.9rem; color: #aaa; margin-bottom: 0;">"El soldado más fuerte de la humanidad"</p>
+
+        <div class="gif-container">
+            <img src="https://media1.tenor.com/m/4n2xdfG0qQYAAAAd/levi-hange.gif" 
+                 alt="Levi Ackerman" 
+                 class="main-gif">
+        </div>
+
+        <div class="section-title">Análisis de Capacidades</div>
+        <table>
+            <tr><td class="stat-name">Combate</td><td class="stat-value">11/10</td></tr>
+            <tr><td class="stat-name">Limpieza</td><td class="stat-value">10/10</td></tr>
+            <tr><td class="stat-name">Lealtad</td><td class="stat-value">Infinita</td></tr>
+            <tr><td class="stat-name">Estilo (con la nueva playera)</td><td class="stat-value">∞</td></tr>
+        </table>
+
+        <div class="section-title">Palabras del Capitán</div>
+        <div class="quote-card">
+            "Deja de perder el tiempo y equípate. Tenemos una expedición fuera de los muros, en la feria del libro y no aceptaré retrasos."
+        </div>
+
+        <div class="personal-note">
+            <strong>NOTA DEL COMANDANTE:</strong><br>
+            Al igual que Levi, sé que este mundo puede ser caótico, pero tenerte en mi equipo es la única decisión de la que nunca me arrepentiré. ¡Disfruta tu regalo, soldado!
+        </div>
+
+    </div>
+
+</body>
+</html>
